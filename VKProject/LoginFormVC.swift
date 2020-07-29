@@ -10,17 +10,18 @@ import UIKit
 
 class LoginFormVC: UIViewController {
     
+    // MARK: Outlets
+    
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var loginTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let hideKeyboardGesture = UITapGestureRecognizer(
-            target: self, action: #selector(self.hideKeyboard))
-        scrollView?.addGestureRecognizer(hideKeyboardGesture)
+        hiddenKeyboard()
     }
+    
+    // MARK: Keyboard
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,17 +53,28 @@ class LoginFormVC: UIViewController {
         )
     }
     
-    @IBAction func signInButtonPressed(_ sender: Any) {
-        
+    func hiddenKeyboard() {
+        let hideKeyboardGesture = UITapGestureRecognizer(
+            target: self, action: #selector(self.hideKeyboard))
+        scrollView?.addGestureRecognizer(hideKeyboardGesture)
+    }
+    
+    func isUserDataCorrect() -> Bool {
         if loginTF.text == "a" && passwordTF.text == "1" {
-            print("It's Ok")
+            return true
         } else {
-            print("Not Ok")
+            return false
         }
     }
-}
-
-extension LoginFormVC {
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Error",
+                                      message: "Incorrect data",
+                                      preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
     
     @objc func keyboardWillShow(notification: NSNotification) {
         let info = notification.userInfo! as NSDictionary
@@ -87,5 +99,20 @@ extension LoginFormVC {
     
     @objc func hideKeyboard() {
         self.scrollView?.endEditing(true)
+    }
+    
+    // MARK: Navigation
+    
+    override func shouldPerformSegue(withIdentifier identifier: String,
+                                     sender: Any?) -> Bool {
+        if isUserDataCorrect() {
+            return true
+        } else {
+            showAlert()
+            return false
+        }
+    }
+
+    @IBAction func signInButtonPressed(_ sender: Any) {
     }
 }
