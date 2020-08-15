@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6932911124E4459400990A5F /* VKProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6932911024E4459400990A5F /* VKProjectTests.swift */; };
 		6932E00224CEE6D80072FDFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6932E00124CEE6D80072FDFC /* AppDelegate.swift */; };
 		6932E00424CEE6D80072FDFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6932E00324CEE6D80072FDFC /* SceneDelegate.swift */; };
 		6932E00924CEE6D80072FDFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6932E00724CEE6D80072FDFC /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		69558B7E24CEF72B0063C7D6 /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6932911324E4459400990A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6932DFF624CEE6D80072FDFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6932DFFD24CEE6D80072FDFC;
+			remoteInfo = VKProject;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6932910E24E4459400990A5F /* VKProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6932911024E4459400990A5F /* VKProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKProjectTests.swift; sourceTree = "<group>"; };
+		6932911224E4459400990A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6932DFFE24CEE6D80072FDFC /* VKProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6932E00124CEE6D80072FDFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6932E00324CEE6D80072FDFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6932910B24E4459400990A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6932DFFB24CEE6D80072FDFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6932910F24E4459400990A5F /* VKProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				6932911824E445A200990A5F /* Models */,
+				6932911024E4459400990A5F /* VKProjectTests.swift */,
+				6932911224E4459400990A5F /* Info.plist */,
+			);
+			path = VKProjectTests;
+			sourceTree = "<group>";
+		};
+		6932911824E445A200990A5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6932DFF524CEE6D80072FDFC = {
 			isa = PBXGroup;
 			children = (
 				6932E00024CEE6D80072FDFC /* VKProject */,
+				6932910F24E4459400990A5F /* VKProjectTests */,
 				6932DFFF24CEE6D80072FDFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				6932DFFE24CEE6D80072FDFC /* VKProject.app */,
+				6932910E24E4459400990A5F /* VKProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +96,20 @@
 		6932E00024CEE6D80072FDFC /* VKProject */ = {
 			isa = PBXGroup;
 			children = (
-				69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */,
 				69558B8024CF3B470063C7D6 /* Storyboards */,
+				693A436F24D6BAA30078B0B4 /* Controllers */,
 				69558B8124CF3B580063C7D6 /* Resources */,
 				69558B7F24CF3B060063C7D6 /* Supporting files */,
 			);
 			path = VKProject;
+			sourceTree = "<group>";
+		};
+		693A436F24D6BAA30078B0B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		69558B7F24CF3B060063C7D6 /* Supporting files */ = {
@@ -94,6 +142,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6932910D24E4459400990A5F /* VKProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6932911724E4459400990A5F /* Build configuration list for PBXNativeTarget "VKProjectTests" */;
+			buildPhases = (
+				6932910A24E4459400990A5F /* Sources */,
+				6932910B24E4459400990A5F /* Frameworks */,
+				6932910C24E4459400990A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6932911424E4459400990A5F /* PBXTargetDependency */,
+			);
+			name = VKProjectTests;
+			productName = VKProjectTests;
+			productReference = 6932910E24E4459400990A5F /* VKProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6932DFFD24CEE6D80072FDFC /* VKProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6932E01224CEE6DD0072FDFC /* Build configuration list for PBXNativeTarget "VKProject" */;
@@ -121,6 +187,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Denis Abramov";
 				TargetAttributes = {
+					6932910D24E4459400990A5F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 6932DFFD24CEE6D80072FDFC;
+					};
 					6932DFFD24CEE6D80072FDFC = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -140,11 +210,19 @@
 			projectRoot = "";
 			targets = (
 				6932DFFD24CEE6D80072FDFC /* VKProject */,
+				6932910D24E4459400990A5F /* VKProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6932910C24E4459400990A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6932DFFC24CEE6D80072FDFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +236,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6932910A24E4459400990A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6932911124E4459400990A5F /* VKProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6932DFFA24CEE6D80072FDFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +255,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6932911424E4459400990A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6932DFFD24CEE6D80072FDFC /* VKProject */;
+			targetProxy = 6932911324E4459400990A5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6932E00724CEE6D80072FDFC /* Main.storyboard */ = {
@@ -190,6 +284,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6932911524E4459400990A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJN9TW8RPS;
+				INFOPLIST_FILE = VKProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Denis-Abramov.VKProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKProject.app/VKProject";
+			};
+			name = Debug;
+		};
+		6932911624E4459400990A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJN9TW8RPS;
+				INFOPLIST_FILE = VKProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Denis-Abramov.VKProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKProject.app/VKProject";
+			};
+			name = Release;
+		};
 		6932E01024CEE6DD0072FDFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,6 +477,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6932911724E4459400990A5F /* Build configuration list for PBXNativeTarget "VKProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6932911524E4459400990A5F /* Debug */,
+				6932911624E4459400990A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6932DFF924CEE6D80072FDFC /* Build configuration list for PBXProject "VKProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
