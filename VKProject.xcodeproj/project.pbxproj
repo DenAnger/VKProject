@@ -13,7 +13,9 @@
 		6932E00924CEE6D80072FDFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6932E00724CEE6D80072FDFC /* Main.storyboard */; };
 		6932E00B24CEE6DD0072FDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6932E00A24CEE6DD0072FDFC /* Assets.xcassets */; };
 		6932E00E24CEE6DD0072FDFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6932E00C24CEE6DD0072FDFC /* LaunchScreen.storyboard */; };
+		6943C82624E8164F001DDE03 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6943C82524E8164F001DDE03 /* PersonTests.swift */; };
 		69558B7E24CEF72B0063C7D6 /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */; };
+		698AF55224ED2B1100F67D17 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AF55124ED2B1100F67D17 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,9 @@
 		6932E00A24CEE6DD0072FDFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6932E00D24CEE6DD0072FDFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6932E00F24CEE6DD0072FDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6943C82524E8164F001DDE03 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormVC.swift; sourceTree = "<group>"; };
+		698AF55124ED2B1100F67D17 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				6932911824E445A200990A5F /* Models */,
-				6932911024E4459400990A5F /* VKProjectTests.swift */,
-				6932911224E4459400990A5F /* Info.plist */,
+				6943C82724E81660001DDE03 /* Supporting files */,
 			);
 			path = VKProjectTests;
 			sourceTree = "<group>";
@@ -71,6 +74,7 @@
 		6932911824E445A200990A5F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6943C82524E8164F001DDE03 /* PersonTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,6 +100,7 @@
 		6932E00024CEE6D80072FDFC /* VKProject */ = {
 			isa = PBXGroup;
 			children = (
+				6943C82424E815B5001DDE03 /* Models */,
 				69558B8024CF3B470063C7D6 /* Storyboards */,
 				693A436F24D6BAA30078B0B4 /* Controllers */,
 				69558B8124CF3B580063C7D6 /* Resources */,
@@ -110,6 +115,23 @@
 				69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6943C82424E815B5001DDE03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				698AF55124ED2B1100F67D17 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6943C82724E81660001DDE03 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				6932911024E4459400990A5F /* VKProjectTests.swift */,
+				6932911224E4459400990A5F /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		69558B7F24CF3B060063C7D6 /* Supporting files */ = {
@@ -240,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6943C82624E8164F001DDE03 /* PersonTests.swift in Sources */,
 				6932911124E4459400990A5F /* VKProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +273,7 @@
 			files = (
 				6932E00224CEE6D80072FDFC /* AppDelegate.swift in Sources */,
 				69558B7E24CEF72B0063C7D6 /* LoginFormVC.swift in Sources */,
+				698AF55224ED2B1100F67D17 /* Person.swift in Sources */,
 				6932E00424CEE6D80072FDFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +314,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJN9TW8RPS;
-				INFOPLIST_FILE = VKProjectTests/Info.plist;
+				INFOPLIST_FILE = "VKProjectTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +334,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJN9TW8RPS;
-				INFOPLIST_FILE = VKProjectTests/Info.plist;
+				INFOPLIST_FILE = "VKProjectTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
