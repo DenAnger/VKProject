@@ -16,6 +16,7 @@
 		6943C82624E8164F001DDE03 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6943C82524E8164F001DDE03 /* PersonTests.swift */; };
 		6943EDFA24ED3A9A00672DBC /* ContactManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6943EDF924ED3A9A00672DBC /* ContactManagerTests.swift */; };
 		6943EDFC24ED3BA900672DBC /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6943EDFB24ED3BA900672DBC /* ContactManager.swift */; };
+		6943EDFF24ED48BB00672DBC /* LoginFormVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6943EDFE24ED48BB00672DBC /* LoginFormVCTests.swift */; };
 		69558B7E24CEF72B0063C7D6 /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */; };
 		698AF55224ED2B1100F67D17 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AF55124ED2B1100F67D17 /* Person.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		6943C82524E8164F001DDE03 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		6943EDF924ED3A9A00672DBC /* ContactManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManagerTests.swift; sourceTree = "<group>"; };
 		6943EDFB24ED3BA900672DBC /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		6943EDFE24ED48BB00672DBC /* LoginFormVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormVCTests.swift; sourceTree = "<group>"; };
 		69558B7D24CEF72B0063C7D6 /* LoginFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormVC.swift; sourceTree = "<group>"; };
 		698AF55124ED2B1100F67D17 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 			children = (
 				6932911824E445A200990A5F /* Models */,
 				6943EDF724ED39EE00672DBC /* Helpers */,
+				6943EDFD24ED488400672DBC /* Controllers */,
 				6943C82724E81660001DDE03 /* Supporting files */,
 			);
 			path = VKProjectTests;
@@ -154,6 +157,14 @@
 				6943EDFB24ED3BA900672DBC /* ContactManager.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6943EDFD24ED488400672DBC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6943EDFE24ED48BB00672DBC /* LoginFormVCTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		69558B7F24CF3B060063C7D6 /* Supporting files */ = {
@@ -286,6 +297,7 @@
 			files = (
 				6943C82624E8164F001DDE03 /* PersonTests.swift in Sources */,
 				6932911124E4459400990A5F /* VKProjectTests.swift in Sources */,
+				6943EDFF24ED48BB00672DBC /* LoginFormVCTests.swift in Sources */,
 				6943EDFA24ED3A9A00672DBC /* ContactManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
