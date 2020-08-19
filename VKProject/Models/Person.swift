@@ -20,3 +20,9 @@ struct Person {
         date = Date()
     }
 }
+
+extension Person: Equatable {
+    static func ==(lhs: Person, rhs: Person) -> Bool {
+        return lhs.login == rhs.login
+    }
+}
