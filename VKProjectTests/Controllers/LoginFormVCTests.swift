@@ -10,21 +10,34 @@ import XCTest
 @testable import VKProject
 
 class LoginFormVCTests: XCTestCase {
+    
+    var sut: LoginFormVC!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(withIdentifier: "LoginFormVC") as? LoginFormVC
+        sut.loadViewIfNeeded()
     }
 
     override func tearDownWithError() throws {
-        
+        sut = nil
         try super.tearDownWithError()
     }
     
     func testWhenViewIsLoadedScrollViewIsNotNil() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let sut = storyboard.instantiateViewController(withIdentifier: "LoginFormVC") as! LoginFormVC
-        sut.loadViewIfNeeded()
         XCTAssertNotNil(sut.scrollView)
+    }
+    
+    func testHasLoginTF() {
+        XCTAssertTrue(sut.loginTF.isDescendant(of: sut.scrollView))
+    }
+    
+    func testHasPasswordTF() {
+        XCTAssertTrue(sut.passwordTF.isDescendant(of: sut.scrollView))
+    }
+    
+    func testHasSignInButton() {
+        XCTAssertTrue(sut.signInButton.isDescendant(of: sut.scrollView))
     }
 }

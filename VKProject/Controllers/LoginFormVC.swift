@@ -15,6 +15,7 @@ class LoginFormVC: UIViewController {
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var loginTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
+    @IBOutlet var signInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
